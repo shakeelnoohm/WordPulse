@@ -82,31 +82,6 @@ wordpulse/
 
 JavaScript listens for input in the textarea and analyzes the text in real time.
 
-Example:
-
-```javascript
-const charCount = input.length;
-const wordCount = input.trim().split(/\s+/).length;
-const sentenceCount = input.split(/[.!?]/).length - 1;
-const paragraphCount = input.split(/\n\s*\n/).length;
-```
-
-### Reading Time
-
-Average reading speed:
-
-```
-200 words per minute
-```
-
-### Speaking Time
-
-Average speaking speed:
-
-```
-150 words per minute
-```
-
 ---
 
 ## Technologies Used
