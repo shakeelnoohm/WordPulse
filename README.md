@@ -42,8 +42,9 @@ https://shakeelnoohm.github.io/WordPulse/
 Example interface:
 
 ```
-Text Input Area
-<img width="1082" height="819" alt="image" src="https://github.com/user-attachments/assets/52b1f08a-b9bd-4fd9-97f1-6933c15e8cb5" />
+## Text Input Area
+
+![WordPulse Screenshot](https://github.com/user-attachments/assets/52b1f08a-b9bd-4fd9-97f1-6933c15e8cb5)
 
 
 
