@@ -26,6 +26,11 @@ body {
 	min-width: 100vw;
 }
 
+.container{
+	max-width: min(1200px, 100%);
+	margin: 0 auto;
+	padding: 0 1rem;
+}
 header {
 	margin-left: var(--PADDING-2);
 	margin-top: var(--PADDING-2);
@@ -35,6 +40,10 @@ header {
 main {
 	padding: var(--PADDING);
 	width: min(70rem, 100%);
+}
+.visually-hidden {
+position:absolute;
+left:-9999px;
 }
 
 aside {
@@ -189,4 +198,64 @@ footer div {
 	main textarea {
 		height: 85vh;
 	}
+}
+
+/* allow absolute positioning */
+.textarea-container{
+    position: relative;
+	width: 100%;
+}
+
+#clear-text{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    background: hsla(0,0%,100%,0.08);
+    color: rgba(255,255,255,0.9);
+
+    border: none;
+    border-radius: var(--CORNER-RADIUS);
+
+    padding: 0.35rem 0.7rem;
+
+    font-family: Poppins;
+    font-weight: 1000;
+    font-size: 0.9rem;
+
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#clear-text:hover{
+    background: hsla(0,0%,100%,0.15);
+    color: white;
+}
+
+/* make sure svg aligns well */
+#clear-text svg{
+    flex-shrink: 0;
+}
+
+#copy-btn{
+	background: hsla(0,0%,100%,0.08);
+	color: white;
+	border: none;
+	border-radius: var(--CORNER-RADIUS);
+	padding: 0.4rem 0.8rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+    position: absolute;
+    bottom: 10px;
+    right: 100px;   /* space from clear button */
+	font-weight: 1000;
+	font-family: Poppins;
 }

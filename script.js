@@ -1,11 +1,14 @@
 const textAreaContent = document.querySelector("#content");
+const clearBtn = document.querySelector("#clear-text");
+const copyBtn = document.querySelector("#copy-btn");
 
 function analyzeText(input) {
 	const charCount = input.length;
-	const wordCount = input.trim().split(/\s+/).length;
+	const charCountNoSpaces = input.replace(/\s/g, "").length;
+	const wordCount = input.trim() ? input.trim().split(/\s+/).length : 0;
 	const sentenceCount = input.split(/[.!?]/).length - 1;
-	const paragraphCount = input.split(/\n\s*\n/).length;
-	return { charCount, wordCount, sentenceCount, paragraphCount };
+	const paragraphCount = input.trim() ? input.split(/\n\s*\n/).length : 0;
+	return { charCount, charCountNoSpaces, wordCount, sentenceCount, paragraphCount };
 }
 
 function formatMinutesToTimeString(minutes) {
@@ -28,6 +31,7 @@ function formatMinutesToTimeString(minutes) {
 
 function displayContent(objOfCounting, objOfTime) {
 	const displayCharacters = document.querySelector("#display-characters");
+	const displayCharactersNoSpaces = document.querySelector("#display-characters-no-spaces");
 	const displayWords = document.querySelector("#display-words");
 	const displaySentences = document.querySelector("#display-sentences");
 	const displayParagraphs = document.querySelector("#display-paragraphs");
@@ -36,6 +40,7 @@ function displayContent(objOfCounting, objOfTime) {
 	const displaySpeaking = document.querySelector("#display-speaking");
 
 	displayCharacters.textContent = objOfCounting.charCount;
+	displayCharactersNoSpaces.textContent = objOfCounting.charCountNoSpaces;
 	displayWords.textContent = objOfCounting.wordCount;
 	displaySentences.textContent = objOfCounting.sentenceCount;
 	displayParagraphs.textContent = objOfCounting.paragraphCount;
@@ -63,4 +68,27 @@ textAreaContent.addEventListener("input", () => {
 	const objOfCounting = analyzeText(textAreaContent.value);
 	const objOfTime = calculateTimeEstimates(textAreaContent.value);
 	displayContent(objOfCounting, objOfTime);
+});
+
+clearBtn.addEventListener("click", () => {
+	textAreaContent.value = "";
+
+	const objOfCounting = analyzeText("");
+	const objOfTime = calculateTimeEstimates("");
+
+	displayContent(objOfCounting, objOfTime);
+
+	textAreaContent.focus();
+});
+
+copyBtn.addEventListener("click", () => {
+	const text = textAreaContent.value;
+
+	navigator.clipboard.writeText(text);
+
+	copyBtn.textContent = "Copied!";
+	
+	setTimeout(() => {
+		copyBtn.innerHTML = '<i class="bi bi-clipboard"></i> Copy Text';
+	}, 1500);
 });
