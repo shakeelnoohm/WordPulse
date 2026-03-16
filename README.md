@@ -32,7 +32,7 @@ This project is built using **HTML, CSS, and JavaScript** with a clean and respo
 You can try the tool here:
 
 ```
-https://your-demo-link.com
+https://shakeelnoohm.github.io/WordPulse/
 ```
 
 ---
@@ -43,13 +43,8 @@ Example interface:
 
 ```
 Text Input Area
------------------------------------
-| Type or paste text here        |
-|                                 |
-|                                 |
-|                                 |
-|                      Copy Clear |
------------------------------------
+<img width="1082" height="819" alt="image" src="https://github.com/user-attachments/assets/91ab2754-bf33-4b45-a90f-5536b4ac19dd" />
+
 
 Statistics Panel
 -----------------------------------
@@ -62,9 +57,6 @@ Paragraphs
 Reading Time
 Speaking Time
 -----------------------------------
-```
-
----
 
 ## Project Structure
 
@@ -144,25 +136,9 @@ The project includes accessibility improvements such as:
 
 ---
 
-## Future Improvements
-
-Possible future features:
-
-- Reading level analysis
-- Keyword density
-- Text highlighting
-- Dark / light theme switch
-- File upload support
-- Export statistics
-
----
-
 ## Author
 
 Created by **Shakeel Nooh M**
-
-GitHub:  
-https://github.com/shakeelnoohm
 
 ---
 
