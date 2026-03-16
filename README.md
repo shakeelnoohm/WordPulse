@@ -37,6 +37,18 @@ https://shakeelnoohm.github.io/WordPulse/
 
 ---
 
+
+Statistics Panel
+-----------------------------------
+Characters
+Characters (No Spaces)
+Words
+Sentences
+Paragraphs
+
+Reading Time
+Speaking Time
+-----------------------------------
 ```
 
 ---
@@ -55,11 +67,7 @@ wordpulse/
 
 ---
 
-## How It Works
-
-### Text Analysis
-
-JavaScript listens for input in the textarea and analyzes the text in real time.
+```
 
 ---
 
@@ -94,9 +102,7 @@ The project includes accessibility improvements such as:
 
 ---
 
-## Author
-
-Created by **Shakeel Nooh M**
+---
 
 ---
 
