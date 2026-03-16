@@ -37,29 +37,6 @@ https://shakeelnoohm.github.io/WordPulse/
 
 ---
 
-## Screenshots
-
-Example interface:
-
-```
-## Text Input Area
-
-![WordPulse Screenshot](https://github.com/user-attachments/assets/52b1f08a-b9bd-4fd9-97f1-6933c15e8cb5)
-
-
-
-Statistics Panel
------------------------------------
-Characters
-Characters (No Spaces)
-Words
-Sentences
-Paragraphs
-
-Reading Time
-Speaking Time
------------------------------------
-
 ```
 
 ---
