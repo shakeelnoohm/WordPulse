@@ -43,7 +43,8 @@ Example interface:
 
 ```
 Text Input Area
-<img width="1082" height="819" alt="image" src="https://github.com/user-attachments/assets/91ab2754-bf33-4b45-a90f-5536b4ac19dd" />
+<img width="1082" height="819" alt="image" src="https://github.com/user-attachments/assets/52b1f08a-b9bd-4fd9-97f1-6933c15e8cb5" />
+
 
 
 Statistics Panel
