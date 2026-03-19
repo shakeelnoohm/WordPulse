@@ -4,58 +4,48 @@
 
 # WordPulse
 
-WordPulse is a simple and fast web-based text analysis tool that helps users analyze their text instantly.  
-It counts words, characters, sentences, paragraphs and also estimates reading and speaking time.
+**WordPulse** is a simple and fast web-based text analysis tool that helps users analyze their text instantly.  
+It counts words, characters, sentences, paragraphs, and also estimates reading and speaking time.
 
-This project is built using **HTML, CSS, and JavaScript** with a clean and responsive UI.
+Built using **HTML, CSS, and Vanilla JavaScript** with a clean and responsive UI.
 
 ---
 
-## Features
+## 🚀 Features
 
-- Character count
-- Character count (without spaces)
-- Word count
-- Sentence count
-- Paragraph count
-- Estimated reading time
-- Estimated speaking time
-- Clear text button
-- Copy text button
-- Responsive design
+- Character count  
+- Character count (without spaces)  
+- Word count  
+- Sentence count  
+- Paragraph count  
+- Estimated reading time  
+- Estimated speaking time  
+- Clear text button  
+- Copy text button  
+- Responsive design  
 - Accessible UI (ARIA labels, screen-reader friendly)
 
 ---
 
-## Demo
+## 🌐 Live Demo
 
-You can try the tool here:
-
-```
-https://shakeelnoohm.github.io/WordPulse/
-```
+Try it here:  
+👉 https://shakeelnoohm.github.io/WordPulse/
 
 ---
 
-
-Statistics Panel
------------------------------------
+## 📊 Statistics Panel
 Characters
 Characters (No Spaces)
 Words
 Sentences
 Paragraphs
-
 Reading Time
 Speaking Time
------------------------------------
-```
 
 ---
 
-## Project Structure
-
-```
+## 📁 Project Structure
 wordpulse/
 │
 ├── index.html
@@ -63,49 +53,36 @@ wordpulse/
 ├── script.js
 ├── favicon.ico
 └── README.md
-```
 
 ---
 
-```
+## 🛠️ Technologies Used
+
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla)  
+- Bootstrap Icons  
 
 ---
 
-## Technologies Used
+## ⚡ Performance Optimizations
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Bootstrap Icons
-
----
-
-## Performance Optimizations
-
-This project includes several small optimizations:
-
-- CSS preload for faster rendering
-- `defer` JavaScript loading
-- semantic HTML structure
-- accessible labels for screen readers
-- responsive layout
+- CSS preload for faster rendering  
+- `defer` JavaScript loading  
+- Semantic HTML structure  
+- Accessible labels for screen readers  
+- Optimized responsive layout  
 
 ---
 
-## Accessibility
+## ♿ Accessibility
 
-The project includes accessibility improvements such as:
-
-- `aria-label` for buttons
-- `aria-live="polite"` for dynamic counters
-- visually hidden labels for screen readers
+- `aria-label` for buttons  
+- `aria-live="polite"` for dynamic counters  
+- Visually hidden labels for screen readers  
 
 ---
 
----
+## 📄 License
 
----
-
-## License
-
-This project is open source and available under the MIT License.
+This project is open source and available under the **MIT License**.
